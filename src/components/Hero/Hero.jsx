@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 import { Img, Line, Text } from "components";
+import HeroItems from "components/HeroItems/HeroItems";
 import './Hero.css'
 
 function useWindowSize() {
@@ -49,13 +50,21 @@ const Hero = () => {
                 from being a tech nerd, I’m also a 📸 content creator, and a 🎸
                 musician, explore my works in my website!{" "}
             </Text>
+            <HeroItems />
         </div>
+
+
         <div className="photo">
             {/* <img src="images/img_herobgmesh.png" alt="Your Name" /> */}
             <img src="images/img_bgimage.png" alt="Your Name" />
         </div>
         </div>
-        // <div className="flex md:flex-col flex-row font-outfit md:gap-10 items-center justify-between mt-[99px] w-full">
+    );
+}
+
+export default Hero
+
+// <div className="flex md:flex-col flex-row font-outfit md:gap-10 items-center justify-between mt-[99px] w-full">
         //     <div className="flex md:flex-1 flex-col items-start justify-start w-[46%] md:w-full">
         //       <Text
         //         className="ml-1 md:ml-[0] sm:text-[21px] md:text-[23px] text-[25px] text-black-900"
@@ -136,7 +145,3 @@ const Hero = () => {
         //         </div> 
         //     </div>
         // </div>
-    );
-}
-
-export default Hero
