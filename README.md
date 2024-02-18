@@ -1,7 +1,5 @@
 ## react_vite_website
 
-Generated with ❤️ from [DhiWise](https://www.dhiwise.com)
-
 ## Description
 
 - This React application is built using [Vite](https://vitejs.dev/).
