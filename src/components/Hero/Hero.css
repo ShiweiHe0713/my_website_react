@@ -1,0 +1,34 @@
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .bio,
+  .photo {
+    flex: 1;
+  }
+  
+  .photo img {
+    width: 100%;
+    max-width: 400px; /* Adjust based on your preference */
+    height: auto;
+  }
+  
+  /* When the screen width is less than 768px, stack the bio and photo */
+  .stacked {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .stacked .bio,
+  .stacked .photo {
+    flex: none;
+  }
+  
+  .stacked .photo {
+    order: -1; /* This will place the photo above the bio */
+    margin-bottom: 20px;
+  }
+  

@@ -2,7 +2,8 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "pages/Home";
 import NotFound from "pages/NotFound";
-const DesktopOne = React.lazy(() => import("pages/DesktopOne"));
+const DesktopOne = React.lazy(() => import("pages/AboutMe"));
+
 const ProjectRoutes = () => {
   return (
     <React.Suspense fallback={<>Loading...</>}>
